@@ -4,13 +4,13 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;         //Make it so if the pet is really far away it squirts a bunch of blood porpelling itself towards the player
-using VanillaAdditions.GlobalEnemy.GlobalBoss.DreadNautilus;
+using VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus;
 
 namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadConchPet : ModProjectile
     {
-        "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchPet"
+        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchPet";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("BloodyPissbaby");

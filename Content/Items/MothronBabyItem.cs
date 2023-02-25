@@ -3,14 +3,15 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
-using VanillaAdditions.Buffs;
-using VanillaAdditions.Proj.Pets;
+using VanillaAdditions.Content.Buffs;
+using VanillaAdditions.Content.Proj.Pets;
 using Microsoft.Xna.Framework;
 
 namespace VanillaAdditions.Content.Items
 {
     public class MothronBabyItem : ModItem
     {
+        public override string Texture => "VanillaAdditions/Assests/Items/MothronBabyItem";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sun Bleached Cocoon");

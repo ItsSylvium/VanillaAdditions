@@ -3,14 +3,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
-using VanillaAdditions.GlobalEnemy.GlobalBoss.DreadNautilus;
+using VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus;
 using Microsoft.Xna.Framework;
 
 namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadConchItem : ModItem
     {
-        "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchItem"
+        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchItem";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Bloody Cavier");

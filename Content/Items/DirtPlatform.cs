@@ -6,7 +6,8 @@ namespace VanillaAdditions.Content.Items
 {
 	public class DirtPlatform : ModItem
 	{
-		public override void SetStaticDefaults() {
+        public override string Texture => "VanillaAdditions/Assests/Items/DirtPlatform";
+        public override void SetStaticDefaults() {
 			DisplayName.SetDefault("DirtPlatform");
 			Tooltip.SetDefault("");
         }

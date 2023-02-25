@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daphn\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj": {}
+    "C:\\Users\\garre\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daphn\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj": {
+    "C:\\Users\\garre\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daphn\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj",
+        "projectUniqueName": "C:\\Users\\garre\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj",
         "projectName": "VanillaAdditions",
-        "projectPath": "C:\\Users\\daphn\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj",
-        "packagesPath": "C:\\Users\\daphn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daphn\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\obj\\",
+        "projectPath": "C:\\Users\\garre\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\VanillaAdditions.csproj",
+        "packagesPath": "C:\\Users\\garre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\garre\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VanillaAdditions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\daphn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\garre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

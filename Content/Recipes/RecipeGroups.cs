@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Localization;
-namespace VanillaAdditions.Recipes
+namespace VanillaAdditions.Content.Recipes
 {
     public class RecipeGroups : ModSystem
     {

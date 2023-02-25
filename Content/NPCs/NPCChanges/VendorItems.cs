@@ -1,4 +1,4 @@
-﻿using VanillaAdditions.Items;
+﻿using VanillaAdditions.Content.Items;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

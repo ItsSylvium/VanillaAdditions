@@ -5,13 +5,13 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.Localization;
 using Terraria.DataStructures;
-using VanillaAdditions.GlobalEnemy.GlobalBoss.DreadNautilus;
+using VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus;
 
 namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadNautilus_Trophy_Tile : ModTile
     {
-        "VanillaAdditions/Assests/Boss/DreadNautilus/DreadNautilus_Trophy_Tile"
+        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadNautilus_Trophy_Tile";
         public override void SetStaticDefaults() //you gotta like go through all that fix it its from VA
         {
             DustType = 7;

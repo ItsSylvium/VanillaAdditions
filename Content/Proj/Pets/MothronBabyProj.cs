@@ -4,13 +4,14 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;         //Make it so if the pet is really far away it squirts a bunch of blood porpelling itself towards the player
-using VanillaAdditions.Buffs;
+using VanillaAdditions.Content.Buffs;
 
 namespace VanillaAdditions.Content.Proj.Pets
 
 {
     public class MothronBabyProj : ModProjectile
     {
+        public override string Texture => "VanillaAdditions/Assests/Proj/MothronBabyProj";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Spawn of the Black Sun");

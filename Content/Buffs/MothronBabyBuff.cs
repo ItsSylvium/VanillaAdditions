@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
-using VanillaAdditions.Proj.Pets;
+using VanillaAdditions.Content.Proj.Pets;
 
 namespace VanillaAdditions.Content.Buffs
 {

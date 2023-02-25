@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
-using VanillaAdditions.Items;
+using VanillaAdditions.Content.Items;
 
 namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.Mothron
 {

@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace VanillaAdditions.Recipes
+namespace VanillaAdditions.Content.Recipes
 {
     public class RecipePlus : ModSystem
     {

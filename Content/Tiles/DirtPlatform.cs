@@ -9,6 +9,7 @@ namespace VanillaAdditions.Content.Tiles
 {
 	public class DirtPlatform : ModTile
     {
+        public override string Texture => "VanillaAdditions/Assests/Tile/DirtPlatform";
         public override void SetStaticDefaults()
         {
             Main.tileLighted[Type] = true;

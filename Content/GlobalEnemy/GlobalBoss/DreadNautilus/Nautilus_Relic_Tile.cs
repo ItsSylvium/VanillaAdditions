@@ -21,8 +21,8 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 
         public Asset<Texture2D> RelicTexture;
 
-        public virtual string RelicTextureName => "VanillaAdditions/GlobalEnemy/GlobalBoss/DreadNautilus/Nautilus_Relic_Tile";
-        public override string Texture => "VanillaAdditions/GlobalEnemy/GlobalBoss/DreadNautilus/RelicPedestal";
+        public virtual string RelicTextureName => "VanillaAdditions/Content/GlobalEnemy/GlobalBoss/DreadNautilus/Nautilus_Relic_Tile";
+        public override string Texture => "VanillaAdditions/Content/GlobalEnemy/GlobalBoss/DreadNautilus/RelicPedestal";
 
         public override void Load()
         {

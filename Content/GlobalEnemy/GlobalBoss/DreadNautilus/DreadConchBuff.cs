@@ -3,9 +3,9 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
-using VanillaAdditions.GlobalEnemy.GlobalBoss.DreadNautilus;
+using VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus;
 
-namespace VanillaAdditions.GlobalEnemy.GlobalBoss.DreadNautilus
+namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadConchBuff : ModBuff
     {
