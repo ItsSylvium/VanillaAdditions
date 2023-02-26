@@ -16,7 +16,7 @@ namespace VanillaAdditions.Content.Items
         {
             Item.width = 24;
             Item.height = 20;
-            Item.maxStack = 9999;
+            Item.maxStack = 999;
             Item.useTurn = true;
             Item.autoReuse = true;
             Item.useAnimation = 2;
