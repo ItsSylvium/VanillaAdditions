@@ -11,7 +11,7 @@ namespace VanillaAdditions.Content.Proj.Pets
 {
     public class MothronBabyProj : ModProjectile
     {
-        public override string Texture => "VanillaAdditions/Assests/Proj/MothronBabyProj";
+        public override string Texture => "VanillaAdditions/Assets/Proj/Pets/MothronBabyProj";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Spawn of the Black Sun");

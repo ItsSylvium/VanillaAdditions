@@ -9,7 +9,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class Nautilus_Relic : ModItem
     {
-        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/Nautilus_Relic";
+        public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/Nautilus_Relic";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Dreadnautilus Relic");

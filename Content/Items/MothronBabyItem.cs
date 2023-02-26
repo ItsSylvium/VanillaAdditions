@@ -11,7 +11,7 @@ namespace VanillaAdditions.Content.Items
 {
     public class MothronBabyItem : ModItem
     {
-        public override string Texture => "VanillaAdditions/Assests/Items/MothronBabyItem";
+        public override string Texture => "VanillaAdditions/Assets/Items/MothronBabyItem";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Sun Bleached Cocoon");

@@ -11,7 +11,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadNautilus_Trophy_Tile : ModTile
     {
-        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadNautilus_Trophy_Tile";
+        public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadNautilus_Trophy_Tile";
         public override void SetStaticDefaults() //you gotta like go through all that fix it its from VA
         {
             DustType = 7;

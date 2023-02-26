@@ -1,0 +1,49 @@
+
+Mods: {
+	VanillaAdditions: {
+		Buffs: {
+			MothronBabyBuff: {
+				DisplayName: Baby Mothron
+				Description: It's so fuzzy!
+			}
+		}
+
+		Items: {
+			DreadConchItem: {
+				DisplayName: Bloody Cavier
+				Tooltip:
+					'''
+					Summons a dreadful shell fish
+					This newborn demon is harmless!
+					'''
+			}
+
+			DreadNautilus_Trophy_Item.DisplayName: Dreadnatilus Trophy
+			Nautilus_Relic.DisplayName: Dreadnautilus Relic
+
+			Cockbow: {
+				DisplayName: Torch Launcher
+				Tooltip:
+					'''
+					Launch your light onto cave walls
+					 Uses Glowsticks and Torches as ammo
+					 33% chance to not consume ammo
+					'''
+			}
+
+			DirtPlatform.DisplayName: DirtPlatform
+
+			MothronBabyItem: {
+				DisplayName: Sun Bleached Cocoon
+				Tooltip: Summons a creature of the black sun
+			}
+		}
+
+		Projectiles: {
+			DreadConchPet.DisplayName: BloodyPissbaby
+			GlowstickShot.DisplayName: Glowstick Shot
+			TorchShot.DisplayName: Torch Shot
+			MothronBabyProj.DisplayName: Spawn of the Black Sun
+		}
+	}
+}

@@ -10,7 +10,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadConchPet : ModProjectile
     {
-        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchPet";
+        public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadConchPet";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("BloodyPissbaby");

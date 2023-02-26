@@ -10,7 +10,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadConchItem : ModItem
     {
-        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchItem";
+        public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadConchItem";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Bloody Cavier");

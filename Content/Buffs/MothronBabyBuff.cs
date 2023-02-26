@@ -9,7 +9,7 @@ namespace VanillaAdditions.Content.Buffs
 {
     public class MothronBabyBuff : ModBuff
     {
-        public override string Texture => "VanillaAdditions/Assets/Buffs/MothronBaby";
+        public override string Texture => "VanillaAdditions/Assets/Buffs/MothronBabyBuff";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Baby Mothron");

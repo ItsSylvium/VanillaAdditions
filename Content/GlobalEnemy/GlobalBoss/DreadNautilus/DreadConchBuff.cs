@@ -9,7 +9,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 {
     public class DreadConchBuff : ModBuff
     {
-        public override string Texture => "VanillaAdditions/Assests/Boss/DreadNautilus/DreadConchBuff";
+        public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadConchBuff";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("");
