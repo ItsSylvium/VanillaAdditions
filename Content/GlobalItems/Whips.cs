@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
+using System.Linq;
 
 namespace VanillaAdditions.Content.GlobalItems
 {
@@ -7,39 +8,8 @@ namespace VanillaAdditions.Content.GlobalItems
     {
         public override void SetDefaults(Item item)
         {
-            if (item.type == 4911) //CoolWhip
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4680) //DarkHarvest
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4678) //Durendal
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4912) //FireCracker
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4913) //Snapthorn
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4914) //Kaleidoscope
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4672) //LeatherWhip
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 4679) //MorningStar
-            {
-                item.autoReuse = true;
-            }
-            if (item.type == 5074) //SpinalTap
+            int[] array = new int[] { 4672, 4678, 4679, 4680, 4911, 4912, 4913, 4914, 5074,};
+            if (array.Contains(item.type))
             {
                 item.autoReuse = true;
             }
