@@ -3,7 +3,8 @@
     "",
     "\\Content",
     "\\Content\\GlobalItems",
-    "\\Content\\Items"
+    "\\Content\\GlobalItems\\BossDropBuffs"
   ],
+  "SelectedNode": "\\Content\\GlobalItems\\BossDropBuffs\\EoLDrops.cs",
   "PreviewInSolutionExplorer": false
 }
