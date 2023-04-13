@@ -17,7 +17,22 @@ namespace VanillaAdditions.Content.ItemLore
             item.SetNameOverride("Japanese long sword");
         }*/
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
-        {
+        {/*
+            //SUMMONS
+            if (item.type == ItemID.GuideVoodooDoll)
+                tooltips[1].Text = tooltips.Text + "\nd";
+
+            //SWORDS
+            if (item.type == ItemID.ZombieArm)
+                tooltips[2].Text = tooltips[2].Text + "\nWhat did you do...";
+            if (item.type == ItemID.Exacalibur)
+                tooltips[3].Text = tooltips[3].Text + "\nThe Excalibur carries an air of mystique and history.";
+            */
+            //TOOLS
+            if (item.type == ChumCaster)
+                tooltips[1].Text = tooltips[1].Text + "\nThe angler who wields this ghastly fishing rod must possess a strong stomach.";
+            
+            //MISC
             if (item.type == ItemID.BrokenHeroSword)
                 tooltips[1].Text = tooltips[1].Text + "\nA remnant of its former self, telling a tale of a sword that has seen better days.";
         }
