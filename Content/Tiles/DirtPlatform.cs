@@ -30,7 +30,7 @@ namespace VanillaAdditions.Content.Tiles
             TileObjectData.newTile.LavaDeath = true;
             TileObjectData.addTile(Type);
             AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
-            ItemDrop = ItemType<Items.DirtPlatform>();
+            //ItemDrop = ItemType<Items.DirtPlatform>();
             AddMapEntry(new Color(189, 106, 54));
         }
     }

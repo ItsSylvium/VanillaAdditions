@@ -12,8 +12,6 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
         public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/Nautilus_Relic";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dreadnautilus Relic");
-
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
         public override void SetDefaults()

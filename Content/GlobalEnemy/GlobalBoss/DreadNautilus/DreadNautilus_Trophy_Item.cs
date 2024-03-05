@@ -11,8 +11,6 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
         public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadNautilus_Trophy_Item";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dreadnatilus Trophy");
-
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1; //for journey mode
         }
         public override void SetDefaults() //Fix the rarity to fit trophies

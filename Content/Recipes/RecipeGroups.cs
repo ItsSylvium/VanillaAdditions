@@ -16,7 +16,7 @@ namespace VanillaAdditions.Content.Recipes
                 ItemID.Bird
 
             });
-            RecipeGroup.RegisterGroup("BasicBird", group);
+            RecipeGroup.RegisterGroup("Bird", group);
         }
     }
 }

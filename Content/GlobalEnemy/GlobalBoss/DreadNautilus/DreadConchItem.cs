@@ -13,9 +13,6 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
         public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadConchItem";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bloody Cavier");
-            Tooltip.SetDefault("Summons a dreadful shell fish\nThis newborn demon is harmless!"); 
-
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1; //for journey mode
         }
         public override void SetDefaults()

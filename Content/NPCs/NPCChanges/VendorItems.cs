@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
+/*
 //shop.item[nextSlot].shopSpecialCurrency = CustomCurrencyID.DefenderMedals; // omit this line if shopCustomPrice should be in regular coins.
 //Witch doctor - Plantera
 //Pirate - Pirate invasion
@@ -16,7 +17,9 @@ namespace VanillaAdditions.Content.NPCs.NPCChanges
 {
     class VanillaAdditions : GlobalNPC
     {
-        public override void SetupShop(int type, Chest shop, ref int nextSlot)
+
+        //public override void SetupShop(int type, Chest shop, ref int nextSlot)
+        public override void ModifyShop(int type, Chest shop, ref int nextSlot)
         {
             if (type == NPCID.Clothier)
             {
@@ -127,3 +130,4 @@ namespace VanillaAdditions.Content.NPCs.NPCChanges
         }
     }
 }
+*/

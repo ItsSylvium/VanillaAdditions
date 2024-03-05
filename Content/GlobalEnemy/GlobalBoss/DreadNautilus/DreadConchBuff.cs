@@ -12,9 +12,6 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
         public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadConchBuff";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("");
-            Description.SetDefault("");
-
             Main.buffNoTimeDisplay[Type] = true;
             Main.vanityPet[Type] = true;
         }

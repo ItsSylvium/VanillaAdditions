@@ -3,7 +3,6 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.ItemDropRules;
-using VanillaAdditions.Content.Items;
 
 namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.Mothron
 {
@@ -13,14 +12,9 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.Mothron
         {
             if (npc.type == NPCID.Mothron)
             {
-                //npcLoot.Add(ItemDropRule.ByCondition(new Conditions.NotExpert(), ModContent.ItemType<DreadNautilus_Trophy_Item>()));
-                //npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsExpert(), ModContent.ItemType<DreadNautilus_Trophy_Item>()));
-                //npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<DreadNautilus_Trophy_Item>()));
-
-                //npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<Nautilus_Relic>()));
-
-                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<MothronBabyItem>())); //Make this have a 25% of being given to players on boss kill
+                Player player;
+                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<MothronBabyItem>(), 4));
             }
-        }
+        }//            ************ Make it drop on player (alt go through boss on kill) *************
     }
 }

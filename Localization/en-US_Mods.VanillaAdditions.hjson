@@ -1,0 +1,48 @@
+Items: {
+	DreadConchItem: {
+		DisplayName: Bloody Cavier
+		Tooltip: This newborn demon is harmless!
+	}
+
+	DreadNautilus_Trophy_Item: {
+		DisplayName: Dreadnautilus Trophy
+		Tooltip: ""
+	}
+
+	DirtPlatform: {
+		DisplayName: Dirt Platform
+		Tooltip: ""
+	}
+
+	Nautilus_Relic: {
+		DisplayName: Dreadnautilus Relic
+		Tooltip: ""
+	}
+
+	MothronBabyItem: {
+		DisplayName: Sun Bleached Cacoon
+		Tooltip: Summons a creature of the black sun
+	}
+
+	Tombstone0: {
+		DisplayName: Tombstone
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	DreadConchBuff: {
+		DisplayName: Dread Conch Buff
+		Description: It's weirdly cute
+	}
+
+	MothronBabyBuff: {
+		DisplayName: Mothron Baby Buff
+		Description: INCREDIBLE FLUFFY
+	}
+}
+
+Projectiles: {
+	DreadConchPet.DisplayName: Dread Conch Pet
+	MothronBabyProj.DisplayName: Mothron Baby Proj
+}

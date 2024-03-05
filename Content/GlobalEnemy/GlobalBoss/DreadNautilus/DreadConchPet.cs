@@ -13,7 +13,6 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
         public override string Texture => "VanillaAdditions/Assets/Boss/DreadNautilus/DreadConchPet";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("BloodyPissbaby");
             Main.projFrames[Projectile.type] = 7; //divides the sheet by this number to get frame size
             Main.projPet[Projectile.type] = true;
             ProjectileID.Sets.LightPet[Projectile.type] = true;

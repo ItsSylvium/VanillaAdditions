@@ -15,7 +15,7 @@ namespace VanillaAdditions.Content.Recipes
             Recipe recipe = Recipe.Create(4281, 1);
             recipe.AddIngredient(ItemID.Wood, 8); 
             recipe.AddIngredient(ItemID.Hay, 14); 
-            recipe.AddRecipeGroup("BasicBird");
+            recipe.AddRecipeGroup("Bird");
             recipe.Register(); // When you're done, call this to register the recipe.
 
             //glowing mushroom seed recipe.

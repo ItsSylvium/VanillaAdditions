@@ -17,24 +17,32 @@ namespace VanillaAdditions.Content.ItemLore
             item.SetNameOverride("Japanese long sword");
         }*/
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
-        {/*
+        {
             //SUMMONS
             if (item.type == ItemID.GuideVoodooDoll)
-                tooltips[1].Text = tooltips.Text + "\nd";
+                tooltips[1].Text = tooltips[1].Text + "\nd";
 
-            //SWORDS
+            //WEAPONS
             if (item.type == ItemID.ZombieArm)
-                tooltips[2].Text = tooltips[2].Text + "\nWhat did you do...";
-            if (item.type == ItemID.Exacalibur)
-                tooltips[3].Text = tooltips[3].Text + "\nThe Excalibur carries an air of mystique and history.";
-            */
+                tooltips[1].Text = tooltips[1].Text + "\nWhat did you do...";
+            if (item.type == ItemID.Excalibur)
+                tooltips[1].Text = tooltips[1].Text + "\nThe Excalibur carries an air of mystique and history.";
+            if (item.type == ItemID.ShadowFlameHexDoll)
+                tooltips[1].Text = tooltips[1].Text + "\nYou can hear faint whispers and giggles emanating from the doll.";
+
             //TOOLS
-            if (item.type == ChumCaster)
+            if (item.type == ItemID.BloodFishingRod)
                 tooltips[1].Text = tooltips[1].Text + "\nThe angler who wields this ghastly fishing rod must possess a strong stomach.";
             
             //MISC
             if (item.type == ItemID.BrokenHeroSword)
                 tooltips[1].Text = tooltips[1].Text + "\nA remnant of its former self, telling a tale of a sword that has seen better days.";
+            if (item.type == ItemID.SoulofFright)
+                tooltips[1].Text = tooltips[1].Text + "\nThe beholder becomes overwhelmed with a feeling of helplessness and loss of control.";
+            if (item.type == ItemID.SoulofMight)
+                tooltips[1].Text = tooltips[1].Text + "\nThe beholder is struck with a sense of invincibility and confidence.";
+            if (item.type == ItemID.SoulofSight)
+                tooltips[1].Text = tooltips[1].Text + "\nThe beholder feels struck with a rush of awe-inspiring sights.";
         }
     }
 }

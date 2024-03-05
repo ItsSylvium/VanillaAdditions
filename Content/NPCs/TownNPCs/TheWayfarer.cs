@@ -14,6 +14,7 @@ using Terraria.GameContent.Personalities;
 using Terraria.DataStructures;
 using System.Collections.Generic;
 using ReLogic.Content;
+/*
 
 namespace VanillaAddtions.Content.NPCs.TownNPCs
 {
@@ -36,15 +37,8 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
             NPCID.Sets.AttackAverageChance[NPC.type] = 30;
             NPCID.Sets.HatOffsetY[NPC.type] = -10;
 
-            NPCID.Sets.NPCBestiaryDrawModifiers drawModifiers = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
-            {
-                Velocity = 1f, 
-                Direction = -1 // -1 is left and 1 is right. NPCs are drawn facing the left by default, MOLE MAN will face the left
-                              // Rotation = MathHelper.ToRadians(180) // You can also change the rotation of an NPC. Rotation is measured in radians
-                              // If you want to see an example of manually modifying these when the NPC is drawn, see PreDraw
-            };
 
-            NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, drawModifiers);
+            //NPCID.Sets.NPCBestiaryDrawOffset.Add(Type,);
 
             NPC.Happiness
                 .SetBiomeAffection<UndergroundBiome>(AffectionLevel.Love)
@@ -75,7 +69,7 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
             NPC.knockBackResist = 0.5f;
             AnimationType = NPCID.Guide;
         }
-        public override bool CanTownNPCSpawn(int numTownNPCs, int money) //spawn npc if x?
+        public override bool CanTownNPCSpawn(int numTownNPCs)
         {
             for (int k = 0; k < 255; k++)
             {
@@ -117,7 +111,7 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
 
         public override void FindFrame(int frameHeight)
         {
-            /*npc.frame.Width = 40;
+            npc.frame.Width = 40;
 			if (((int)Main.time / 10) % 2 == 0)
 			{
 				npc.frame.X = 40;
@@ -125,18 +119,18 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
 			else
 			{
 				npc.frame.X = 0;
-			}*/
+			}
         }
 
         public override string GetChat()
         {
             WeightedRandom<string> chat = new WeightedRandom<string>();
 
-            /*int partyGirl = NPC.FindFirstNPC(NPCID.PartyGirl);
+            int partyGirl = NPC.FindFirstNPC(NPCID.PartyGirl);
             if (partyGirl >= 0 && Main.rand.NextBool(4))
             {
                 chat.Add("Can you please tell " + Main.npc[partyGirl].GivenName + " to stop decorating my house with colors?");
-            }*/
+            }
             chat.Add("Sometimes I feel like I'm different from everyone else here.");
             chat.Add("What's your favorite color? My favorite colors are white and black.");
             chat.Add("What? I don't have any arms or legs? Oh, don't be ridiculous!");
@@ -148,7 +142,7 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
         { // What the chat buttons are when you open up the chat UI
             button = Language.GetTextValue("LegacyInterface.28");
         }
-        public override void OnChatButtonClicked(bool firstButton, ref bool shop)
+        public override void OnChatButtonClicked(bool firstButton, ref string WayfarerShop)
         {
             if (firstButton)
             {
@@ -212,7 +206,7 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
             shop.item[nextSlot].SetDefaults(ItemID.Diamond);
             shop.item[nextSlot].shopCustomPrice = 6000;
             nextSlot++;
-            /*
+            
             if (Main.LocalPlayer.HasBuff(BuffID.Lifeforce))
             {
                 shop.item[nextSlot].SetDefaults(ModContent.ItemType<ExampleHealingPotion>());
@@ -242,15 +236,15 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
             }
             else
             {
-            }*/
+            }
         }
 
-        /* 
+        
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
             Item.NewItem(npc.getRect(), ModContent.ItemType<Items.Armor.ExampleCostume>());          PUT GORE HERE
         }
-        */
+        
 
 
                                     // Due to the Wayfarer lack of gender they may not be teleported to a king or queen statue
@@ -281,3 +275,4 @@ namespace VanillaAddtions.Content.NPCs.TownNPCs
         }
     }
 }
+*/

@@ -1,20 +1,16 @@
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 using Terraria.ID;
+using Terraria;
 
 namespace VanillaAdditions.Content.Items
 {
 	public class DirtPlatform : ModItem
-	{
+    {
         public override string Texture => "VanillaAdditions/Assets/Items/DirtPlatform";
-        public override void SetStaticDefaults() {
-			DisplayName.SetDefault("DirtPlatform");
-			Tooltip.SetDefault("");
-        }
-
         public override void SetDefaults()
         {
-            Item.width = 24;
+            Item.width = 26;
             Item.height = 20;
             Item.maxStack = 999;
             Item.useTurn = true;
