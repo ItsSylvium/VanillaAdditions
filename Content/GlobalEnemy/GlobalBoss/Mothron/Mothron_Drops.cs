@@ -12,8 +12,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.Mothron
         {
             if (npc.type == NPCID.Mothron)
             {
-                Player player;
-                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<MothronBabyItem>(), 4));
+                npcLoot.Add(ItemDropRule.MasterModeDropOnAllPlayers(ModContent.ItemType<MothronBabyItem>(), 4));
             }
         }//            ************ Make it drop on player (alt go through boss on kill) *************
     }

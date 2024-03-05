@@ -19,7 +19,7 @@ namespace VanillaAdditions.Content.GlobalEnemy.GlobalBoss.DreadNautilus
 
                 npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<Content.GlobalEnemy.GlobalBoss.DreadNautilus.Nautilus_Relic>()));
 
-                npcLoot.Add(ItemDropRule.ByCondition(new Conditions.IsMasterMode(), ModContent.ItemType<Content.GlobalEnemy.GlobalBoss.DreadNautilus.DreadConchItem>(), 4)); //given to players on boss kill
+                npcLoot.Add(ItemDropRule.MasterModeDropOnAllPlayers(ModContent.ItemType<DreadConchItem>(), 4));//given to players on boss kill with 1/4 chance
             }
         }
         /*public override void OnKill(NPC npc)
