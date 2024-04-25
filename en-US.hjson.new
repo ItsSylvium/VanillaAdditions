@@ -8,7 +8,8 @@ Mods: {
 			}
 		}
 
-		Items: {
+		Items: 
+		{
 			DreadConchItem: {
 				DisplayName: Bloody Cavier
 				Tooltip:
@@ -17,8 +18,17 @@ Mods: {
 					This newborn demon is harmless!
 					'''
 			}
+			Destroyer_Mandible: {
+				DisplayName: Mandible of the Destroyer
+				Tooltip:
+					'''
+					Summons a dreadful shell fish
+					This newborn demon is harmless!
+					'''
+			}
 
 			DreadNautilus_Trophy_Item.DisplayName: Dreadnatilus Trophy
+
 			Nautilus_Relic.DisplayName: Dreadnautilus Relic
 
 			Cockbow: {
@@ -31,10 +41,12 @@ Mods: {
 					'''
 			}
 
-			DirtPlatform.DisplayName: DirtPlatform
+			Dirt_Platform: {
+				DisplayName: Dirt Platform
+			}
 
 			MothronBabyItem: {
-				DisplayName: Sun Bleached Cocoon
+				DisplayName: Sun-Bleached Cocoon
 				Tooltip: Summons a creature of the black sun
 			}
 		}

@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
-using static Terraria.ModLoader.ModContent; //Needs to be dropped by tile and needs a way to make it place any vairiant
 using Terraria.ID;
+using Terraria;
 
 namespace VanillaAdditions.Content.Items
 {
@@ -19,15 +19,7 @@ namespace VanillaAdditions.Content.Items
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
             Item.createTile = TileID.Tombstones;
-            /*if (Main.rand.NextBool(2))
-            {
-                Item.placeStyle = 3;
-            }
-            else
-            {
-                Item.placeStyle = 2;
-            }*/
-;
+            Item.placeStyle = Main.rand.Next(0, 11);
         }
     }
 }

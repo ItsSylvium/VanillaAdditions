@@ -28,6 +28,21 @@ Items: {
 		DisplayName: Tombstone
 		Tooltip: ""
 	}
+
+	DestroyerMandible: {
+		DisplayName: Destroyer Mandible
+		Tooltip: ""
+	}
+
+	Destroyer_Mandible: {
+		DisplayName: Destroyer_ Mandible
+		Tooltip: ""
+	}
+
+	Dirt_Platform: {
+		DisplayName: Dirt_ Platform
+		Tooltip: ""
+	}
 }
 
 Buffs: {
@@ -39,6 +54,11 @@ Buffs: {
 	MothronBabyBuff: {
 		DisplayName: Mothron Baby Buff
 		Description: INCREDIBLE FLUFFY
+	}
+
+	Destroyer_Rage: {
+		DisplayName: Destroyer_ Rage
+		Description: Mods.VanillaAdditions.Buffs.Destroyer_Rage.Description
 	}
 }
 

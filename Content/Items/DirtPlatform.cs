@@ -19,7 +19,7 @@ namespace VanillaAdditions.Content.Items
             Item.useTime = 2;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = TileType<Tiles.DirtPlatform>();
+            Item.createTile = TileType<Tiles.Tile_DirtPlatform>();
         }
         public override void AddRecipes()
         {
