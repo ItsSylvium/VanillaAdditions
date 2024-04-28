@@ -30,5 +30,11 @@ namespace VanillaAdditions.Common.GlobalEnemy.GlobalBoss.DreadNautilus
                 player.AddBuff(Item.buffType, 3600);
             }
         }
+        public override void ModifyShootStats(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
+        {
+            Vector2 idleOffset = new(-40 * player.direction, -40);
+
+            position = player.Center + idleOffset;
+        }
     }
 }

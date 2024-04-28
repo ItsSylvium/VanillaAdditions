@@ -1,5 +1,7 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Microsoft.CodeAnalysis;
+using Microsoft.Xna.Framework;
 using System;
+using System.Net.Mime;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -29,58 +31,71 @@ namespace VanillaAdditions.Common.GlobalEnemy.GlobalBoss.DreadNautilus
         public override void AI()
         {
             Player player = Main.player[Projectile.owner];
-            Vector2 idleOffset = new(-40 * player.direction, -40);
-            Vector2 direction = (player.Center + idleOffset) - Projectile.Center;
-            float speed = 8f;
-            direction.Normalize();
-            direction *= speed;
-            float between = Vector2.Distance((player.Center + idleOffset), Projectile.Center);
-            float wave = Projectile.ai[0] * 0.025f;
+            Vector2 idlePosition = new(player.Center.X + (-20 * player.direction), player.position.Y + -40);
+            Vector2 distance = idlePosition - Projectile.Center;
+            distance.Normalize();
+            float between = Projectile.Center.Distance(idlePosition);
             float inertia = 40f;
-            bool close;
-            Projectile.ai[0]++;
 
-            // Projectile no die like this
             if (!player.dead && player.HasBuff(ModContent.BuffType<DreadConchBuff>()))
             {
                 Projectile.timeLeft = 2;
             }
-            Projectile.ai[0]++;
 
-            if (between <= 50f)
+            Lighting.AddLight(Projectile.Center, 0.8f, 0.2f, 0.2f);
+
+            if (between < 40f)
             {
-                Projectile.velocity = (Projectile.velocity * (inertia - 1) + direction) / inertia;
-                Projectile.velocity.Y = (float)Math.Sin(wave) * 2;
-                //Projectile.velocity = new Vector2(Projectile.velocity.X * (inertia - 1) / inertia, (float)Math.Sin(wave) * 2);
+                inertia = 20f;
+                IdleAnimation();
+                Projectile.spriteDirection = -player.direction;
             }
-            if (between > 50f && between <= 400f)
+            if (between >= 40f && between < 600f)
             {
-                Projectile.velocity = (Projectile.velocity * (inertia - 1) + direction) / inertia;
+                distance *= 8;
+                IdleAnimation();
+                Projectile.spriteDirection = -Projectile.direction;
             }
-            else
+            else if (between >= 600f)
             {
-                inertia *= 2;
-                Projectile.velocity = (Projectile.velocity * (inertia - 1) + direction) / inertia;
+                distance *= 10;
+                InkAnimation();
+                Projectile.spriteDirection = Projectile.direction;
             }
 
-
-            //Projectile.Center = player.Center + idleOffset;
-            //Projectile.velocity = new Vector2(0, (float)Math.Sin(wave) * 16);
-            
-            /*Projectile.frameCounter -= 2; //this part is courtise of naylddd, i could not for the life of me figure it out
-            if (Projectile.frameCounter <= -6)
+            Projectile.velocity = (Projectile.velocity * (inertia - 1f) + distance) / inertia;
+        }
+        private void IdleAnimation()
+        {
+            Projectile.frameCounter++;
+            if (Projectile.frameCounter >= 8)
             {
                 Projectile.frameCounter = 0;
-                Projectile.frame = (Projectile.frame + 1) % Main.projFrames[Projectile.type];
+                Projectile.frame++;
+                if (Projectile.frame >= 4)
+                {
+                    Projectile.frame = 0;
+                }
             }
+        }
+        private void InkAnimation()
+        {
+            Dust.NewDustDirect(Projectile.Center, 0, 0, DustID.Asphalt, Projectile.velocity.X * -1f, Projectile.velocity.Y * -1f);
 
-            Main.projFrames[Type] = 7;
-
-            if (!Main.dedServ)
+            Projectile.frameCounter++;
+            if (Projectile.frameCounter >= 5)
             {
-                Lighting.AddLight(Projectile.Center, Projectile.Opacity * 0.9f, Projectile.Opacity * 0.1f, Projectile.Opacity * 0.3f); //make it much less intense
+                if (Projectile.frame >= 6 && Projectile.frameCounter != 0)
+                {
+                    Projectile.frameCounter = 0;
+                    Projectile.frame = 5;
+                }
+                if (Projectile.frame <= 5 && Projectile.frameCounter != 0)
+                {
+                    Projectile.frameCounter = 0;
+                    Projectile.frame = 6;
+                }
             }
-            //Projectile.owner*/
         }
     }
 }
