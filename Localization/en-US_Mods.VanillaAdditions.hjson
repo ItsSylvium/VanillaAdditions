@@ -65,4 +65,5 @@ Buffs: {
 Projectiles: {
 	DreadConchPet.DisplayName: Dread Conch Pet
 	MothronBabyProj.DisplayName: Mothron Baby Proj
+	DesertBiomePoint.DisplayName: Desert Biome Point
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VanillaAdditions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+828c402d4438a1e3fa5a3d113897303be33dedaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fe94de8eefc7d66d9ae214d171a0fb5644c061f")]
 [assembly: System.Reflection.AssemblyProductAttribute("VanillaAdditions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VanillaAdditions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
